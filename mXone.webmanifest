@@ -2,6 +2,7 @@
     "id": "mXone",
     "name": "mXone",
     "short_name": "mXone",
+    "scope": "https://mohanjeet.blogspot.com/",
     "start_url": "https://mohanjeet.blogspot.com/",
     "display": "standalone",
     "background_color": "#fff",
@@ -11,7 +12,7 @@
           "name": "Home",
           "short_name": "Home",
           "description": "Go to Home",
-          "url": "/",
+          "url": "https://mohanjeet.blogspot.com/",
           "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxbj4RPomBVu6g8C11wCi25ST9R6nHmPv5urG5wM6zF86k3eO1on-yHTSw4hd8ymGv_KHyrpiR03RU9VFnwWjsnoCmRe9_Y3asKaOx5U3xX9s46-YACER1k8VOA64Z3rL0c8-e9wPEy8MdL3BD3oiMOIN-8qDGsaIgE-ebg2yRpMpxMxQKrkDROLTl/s192/mXone%20Logo_500.png", "sizes": "192x192" }]
         }],
     "description": "Art, Articles, Photography, etc.",
@@ -43,6 +44,5 @@
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgxbj4RPomBVu6g8C11wCi25ST9R6nHmPv5urG5wM6zF86k3eO1on-yHTSw4hd8ymGv_KHyrpiR03RU9VFnwWjsnoCmRe9_Y3asKaOx5U3xX9s46-YACER1k8VOA64Z3rL0c8-e9wPEy8MdL3BD3oiMOIN-8qDGsaIgE-ebg2yRpMpxMxQKrkDROLTl/s512/mXone%20Logo_500.png",
       "sizes": "512x512",
       "type": "image/png"
-    }],
-    "screenshots": [{}]
+    }]
   }
