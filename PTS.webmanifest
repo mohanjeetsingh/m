@@ -8,13 +8,35 @@
     "background_color": "#fff",
     "theme_color": "#023",
     "shortcuts": [
-        {
-          "name": "Home",
-          "short_name": "Home",
-          "description": "Go to Home",
-          "url": "https://PsychoTechServices.com/",
-          "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s192/20221004_PTSLogo_1000.png", "sizes": "192x192" }]
-        }],
+      {
+        "name": "LaVie - People Development Services",
+        "short_name": "LaVie",
+        "description": "Visit LaVie",
+        "url": "https://PsyLearners.PsychoTechServices.com/",
+        "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s192/20221004_PTSLogo_1000.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Psychology Learners",
+        "short_name": "PsyLearners",
+        "description": "Go to Psychology Learners",
+        "url": "https://PsyLearners.PsychoTechServices.com/",
+        "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s192/20221004_PTSLogo_1000.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "PsychoTech Services for Society",
+        "short_name": "PTSS",
+        "description": "Go to PTS for Society",
+        "url": "https://Social.PsychoTechServices.com/",
+        "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s192/20221004_PTSLogo_1000.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Sociology Learners",
+        "short_name": "Sociology Learners",
+        "description": "Go to Sociology Learners",
+        "url": "https://Sociology.PsychoTechServices.com/",
+        "icons": [{ "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s192/20221004_PTSLogo_1000.png", "sizes": "192x192" }]
+      }
+   ],
     "description": "Combining Psychology and Technology for a Better Humanity!",
     "icons": [{
       "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhaYinBtpii3_MFeC72ia6_bP8WT1Bom5xfiVsIn5scVzATIKv3zsfcgGScblayJKoEJ864BdKd9nDjFa3ymaRqImtjcAmrokAkn7IPMDtEPfQiM-Id8XiS9YTCntMfRkM0jnIxPjXFQ6yYP5inxkEq-Z62tGb1l99DOggH7KTJHFeYM-O_A9JgH92VrA/s48/20221004_PTSLogo_1000.png",
