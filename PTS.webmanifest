@@ -7,6 +7,15 @@
     "display": "standalone",
     "background_color": "#fff",
     "theme_color": "#023",
+    "related_applications": [
+    {
+      "platform": "play", 
+      "id": "appinventor.ai_realpsychotechservices.PsyLearners" 
+    }
+  ],
+
+  "prefer_related_applications": true
+
     "shortcuts": [
       {
         "name": "LaVie - People Development Services",
