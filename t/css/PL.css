@@ -2510,12 +2510,12 @@ textarea.form-control {
 }
 
 .text-bg-primary {
-    color: #000 !important;
+    color: #fff !important;
     background-color: RGBA(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important
 }
 
 .text-bg-light {
-    color: #000 !important;
+    color: #002233 !important;
     background-color: RGBA(var(--bs-light-rgb), var(--bs-bg-opacity, 1)) !important
 }
 
