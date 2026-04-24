@@ -3,6 +3,11 @@ a {
   font-weight: 500;
 }
 
+a:hover {
+  text-decoration: none !important;
+  color: var(--bs-link-hover-color) !important;
+}
+
 /* Refined Card styles */
 .card {
   box-shadow: var(--bs-box-shadow) !important;
