@@ -8,6 +8,11 @@ a:hover {
   color: var(--bs-link-hover-color) !important;
 }
 
+.btn-secondary {
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-color: #006699;
+}
+
 /* Refined Card styles */
 .card {
   box-shadow: var(--bs-box-shadow) !important;
