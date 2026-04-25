@@ -23,7 +23,7 @@ a:hover {
   padding: 0;
 }
 
-.comments [cite] {
+.comments cite {
   font-style: normal;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity, 1))
 }
