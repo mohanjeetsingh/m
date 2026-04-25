@@ -18,6 +18,11 @@ a:hover {
   padding: 0;
 }
 
+.comments [cite] {
+  font-style: normal;
+  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity, 1))
+}
+
 .comments ol li {
   list-style-type: none !important;
   padding: .5rem;
