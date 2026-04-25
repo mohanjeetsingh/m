@@ -8,10 +8,13 @@ a:hover {
   color: var(--bs-link-hover-color) !important;
 }
 
+.btn-primary,
 .btn-secondary {
-  --bs-btn-hover-bg: #fff;
-  --bs-btn-hover-color: #006699;
+  --bs-btn-hover-bg: var(--bs-accent);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-border-color: var(--bs-accent);
 }
+
 
 /* Refined Card styles */
 .card {
