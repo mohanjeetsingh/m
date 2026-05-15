@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0'
+        name='viewport'>
+    <title>Disqus comments</title>
+    <meta content='Disqus comments' name='description'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+        }
+    </style>
+</head>
+<body>
+    <div id='root'></div>
+    <script>
+        !function (a, s) {
+            var i = "disqus_thread"
+                , r = "dsq-embed-scr"
+                , n = ["preData", "preInit", "onInit", "onReady", "afterRender", "preReset", "onIdentify", "beforeComment", "onNewComment", "onPaginate"];
+            function d(e) {
+                e.parentElement ? e.parentElement.removeChild(e) : e.parentNode ? e.parentNode.removeChild(e) : e.remove()
+            }
+            function o(t) {
+                return function () {
+                    if (this.page = this.page || {},
+                        this.page.identifier = t.identifier,
+                        this.page.url = t.url,
+                        this.page.title = t.title,
+                        this.page.category_id = t.categoryID,
+                        this.page.remote_auth_s3 = t.remoteAuthS3,
+                        this.page.api_key = t.apiKey,
+                        t.sso && (this.sso = t.sso),
+                        t.language && (this.language = t.language),
+                        n.length) {
+                        this.callbacks = this.callbacks || {};
+                        for (var e = 0; e < n.length; e++)
+                            this.callbacks[n[e]] = [t[n[e]]]
+                    }
+                }
+            }
+            function e() {
+                var e;
+                e = r,
+                    (e = s.getElementById(e)) && d(e),
+                    a.DISQUS && a.DISQUS.reset({});
+                try {
+                    delete a.DISQUS
+                } catch (e) {
+                    a.DISQUS = void 0
+                }
+                var t = s.getElementById(i);
+                if (t) {
+                    for (; t.hasChildNodes();)
+                        t.removeChild(t.firstChild);
+                    d(t)
+                }
+                !function () {
+                    var e = s.querySelectorAll('link[href*="disquscdn.com/next/embed"], link[href*="disquscdn.com/next/recommendations"], link[href*="disqus.com/next/config.js"], script[src*="disquscdn.com/next/embed"], script[src*="disqus.com/count-data.js"], iframe[title="Disqus"]');
+                    if (e.length)
+                        for (var t = 0; t < e.length; t++)
+                            d(e[t])
+                }()
+            }
+            function t(e, t) {
+                var i, n;
+                a.DISQUS && s.getElementById(r) ? a.DISQUS.reset({
+                    reload: !0,
+                    config: o(t)
+                }) : (a.disqus_config = o(t),
+                    a.disqus_shortname = e,
+                    i = "https://" + encodeURIComponent(e) + ".disqus.com/embed.js",
+                    n = r,
+                    t = s.body,
+                    (e = s.createElement("script")).async = !0,
+                    e.src = i,
+                    e.id = n,
+                    e.setAttribute("data-timestamp", (new Date).getTime()),
+                    t.appendChild(e))
+            }
+            var c = s.getElementById("root")
+                , l = (m = new URLSearchParams(a.location.search.slice(1))).get("shortname")
+                , m = {
+                    url: m.get("url") || void 0,
+                    identifier: m.get("identifier") || void 0,
+                    title: m.get("title") || void 0,
+                    language: m.get("language") || void 0
+                };
+            l ? (a.addEventListener("message", function (e) {
+                if ("string" == typeof e.data) {
+                    var t, i;
+                    try {
+                        t = JSON.parse(e.data)
+                    } catch (e) { }
+                    t && ("resize" === t.name || "rendered" === t.name) && t.data && "number" == typeof t.data.height && (i = {
+                        sentinel: "amp",
+                        type: "embed-size",
+                        height: t.data.height
+                    },
+                        a.parent.postMessage(i, "*"))
+                }
+            }, !1),
+                l = l,
+                m = m,
+                c.innerHTML = "<div id='" + i + "'></div>",
+                a.disqus_shortname && a.disqus_shortname !== l && e(),
+                t(l, m)) : c.innerHTML = "Error: Make sure parameter 'shortname' is specified and contains a valid Disqus shortname."
+        }(window, document);
+    </script>
+</body>
+</html>

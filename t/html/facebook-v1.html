@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+    <meta content='width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=5.0'
+        name='viewport'>
+    <title>Facebook comments</title>
+    <meta content='Facebook comments' name='description'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+        }
+
+        .fb-comments:not([fb-xfbml-state='rendered']) {
+            display: block;
+            min-height: 196px;
+            background-image: url("data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' preserveAspectRatio='xMidYMid meet'><path fill='rgba(221,221,221,1)' opacity='.5' d='M12 2A10 10 0 1 0 22 12A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8A8 8 0 0 1 12 20Z'></path><path fill='rgba(0,0,255,1)' d='M20 12h2A10 10 0 0 0 12 2V4A8 8 0 0 1 20 12Z'><animateTransform attributeName='transform' dur='1s' from='0 12 12' repeatCount='indefinite' to='360 12 12' type='rotate'/></path></svg>");
+            background-position: center;
+            background-size: 40px;
+            background-repeat: no-repeat
+        }
+    </style>
+</head>
+<body>
+    <div id='root'></div>
+    <script>
+        !function (o, s) {
+            var n = "fb-root"
+                , i = "fb-sdk-scr"
+                , a = "fb-comments";
+            function r(e) {
+                e.parentElement ? e.parentElement.removeChild(e) : e.parentNode ? e.parentNode.removeChild(e) : e.remove()
+            }
+            function l(e) {
+                e = s.getElementById(e);
+                e && r(e)
+            }
+            function d() {
+                l(i),
+                    l(n);
+                try {
+                    delete o.FB
+                } catch (e) {
+                    o.FB = void 0
+                }
+                const e = s.getElementsByClassName(a);
+                if (e.length)
+                    for (var t = 0; t < e.length; t++) {
+                        for (; e[t].hasChildNodes();)
+                            e[t].removeChild(e[t].firstChild);
+                        r(e[t])
+                    }
+                !function () {
+                    var e = s.querySelectorAll("style[data-fbcssmodules], script[src*='//connect.facebook.net']");
+                    if (e.length)
+                        for (var t = 0; t < e.length; t++)
+                            r(e[t])
+                }()
+            }
+            function e(e) {
+                var t, a, r;
+                o.FB ? d() : ((t = s.createElement("div")).id = n,
+                    s.body.appendChild(t),
+                    a = e.language,
+                    r = e.appId,
+                    t = "https://connect.facebook.net/" + (a || "en_US") + "/sdk.js#xfbml=1&version=v20.0" + (r ? "&appId=" + r : ""),
+                    e = i,
+                    a = s.body,
+                    (r = s.createElement("script")).async = !0,
+                    r.src = t,
+                    r.id = e,
+                    r.setAttribute("data-timestamp", (new Date).getTime()),
+                    a.appendChild(r))
+            }
+            var t, c, m = s.getElementById("root"), h = new URLSearchParams(o.location.search.slice(1)), u = h.get("language"), p = u ? (t = {
+                ab: "GE",
+                af: "ZA",
+                am: "ET",
+                an: "ES",
+                ar: "SA",
+                as: "IN",
+                av: "RU",
+                ay: "PE",
+                az: "AZ",
+                be: "BY",
+                bg: "BG",
+                bn: "IN",
+                bo: "CN",
+                br: "FR",
+                bs: "BA",
+                ca: "ES",
+                ce: "RU",
+                ch: "FM",
+                cr: "CA",
+                cs: "CZ",
+                cu: "RU",
+                cy: "GB",
+                da: "DK",
+                de: "DE",
+                dz: "BT",
+                el: "GR",
+                en: "GB",
+                eo: "ZZ",
+                es: "ES",
+                et: "EE",
+                eu: "ES",
+                fa: "IR",
+                ff: "SN",
+                fi: "FI",
+                fo: "FO",
+                fr: "FR",
+                ga: "IE",
+                gl: "ES",
+                gu: "IN",
+                gv: "GB",
+                he: "IL",
+                hi: "IN",
+                hr: "HR",
+                ht: "HT",
+                hu: "HU",
+                hy: "AM",
+                id: "ID",
+                is: "IS",
+                it: "IT",
+                ja: "JP",
+                jv: "ID",
+                ka: "GE",
+                kk: "KZ",
+                km: "KH",
+                kn: "IN",
+                ko: "KR",
+                ku: "TR",
+                ky: "KG",
+                la: "ZZ",
+                lb: "LU",
+                lo: "LA",
+                lt: "LT",
+                lv: "LV",
+                mk: "MK",
+                ml: "IN",
+                mn: "MN",
+                mr: "IN",
+                ms: "MY",
+                mt: "MT",
+                nb: "NO",
+                ne: "NP",
+                nn: "NO",
+                no: "NO",
+                oc: "FR",
+                or: "IN",
+                pa: "IN",
+                pl: "PL",
+                ps: "AF",
+                pt: "BR",
+                qu: "PE",
+                rm: "CH",
+                ro: "RO",
+                ru: "RU",
+                rw: "RW",
+                se: "SE",
+                si: "LK",
+                sk: "SK",
+                sl: "SI",
+                sq: "AL",
+                sr: "RS",
+                ss: "ZA",
+                st: "ZA",
+                su: "ID",
+                sv: "SE",
+                sw: "KE",
+                ta: "IN",
+                te: "IN",
+                tg: "TJ",
+                th: "TH",
+                tk: "TM",
+                tl: "PH",
+                tn: "ZA",
+                tr: "TR",
+                ts: "ZA",
+                tt: "RU",
+                ug: "CN",
+                uk: "UA",
+                ur: "PK",
+                vi: "VN",
+                vo: "ZZ",
+                wa: "BE",
+                wo: "SN",
+                xh: "ZA",
+                yi: "US",
+                zu: "ZA"
+            },
+                p = (c = u).toLowerCase().replace(/^(?![a-z]{2}[-_][a-z]{2}$)([a-z]{2}).*/, "$1").replace(/[-_]([a-z]{2})$/, function (e, t) {
+                    return "_" + t.toUpperCase()
+                }),
+                c = null,
+                /^[a-z]{2}_[A-Z]{2}$/.test(p) ? c = p : /^[a-z]{2}$/.test(p) && t[p] && (c = p + "_" + t[p].toUpperCase()),
+                c && /^ar/.test(c) && (c = "ar_AR"),
+                c) : null;
+            (p = {
+                width: "100%",
+                href: h.get("href") || void 0,
+                colorScheme: h.get("colorscheme") || void 0,
+                numPosts: h.get("numposts") || void 0,
+                orderBy: h.get("orderby") || void 0,
+                language: p || void 0
+            }).href ? (o.addEventListener("message", function (e) {
+                var t;
+                "string" == typeof e.data && (e = (t = new URLSearchParams(e.data)).get("type"),
+                    t = t.get("height"),
+                    "resize" === e && t && (t = {
+                        sentinel: "amp",
+                        type: "embed-size",
+                        height: Number(t)
+                    },
+                        o.parent.postMessage(t, "*")))
+            }, !1),
+                c = p,
+                (h = m).innerHTML = "",
+                h.appendChild((p = c,
+                    (h = s.createElement("div")).className = a,
+                    p.colorScheme && h.setAttribute("data-colorscheme", p.colorScheme),
+                    p.href && h.setAttribute("data-href", p.href),
+                    "boolean" == typeof p.lazy && h.setAttribute("data-lazy", p.lazy),
+                    "boolean" == typeof p.mobile && h.setAttribute("data-mobile", p.mobile),
+                    p.numPosts && h.setAttribute("data-numposts", p.numPosts),
+                    p.orderBy && h.setAttribute("data-order-by", p.orderBy),
+                    p.width && h.setAttribute("data-width", p.width),
+                    h)),
+                e(c)) : m.innerHTML = "Error: Make sure parameter 'href' is specified and contains a valid webpage url."
+        }(window, document);
+    </script>
+</body>
+</html>
